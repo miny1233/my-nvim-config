@@ -13,7 +13,7 @@ vim.opt.fileencoding = "utf-8"
 vim.opt.autoread = true
 
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = true 
 vim.opt.numberwidth = 4
 
 vim.opt.splitbelow = true
@@ -23,3 +23,9 @@ vim.opt.updatetime = 100
 
 vim.opt.termguicolors = true
 vim.opt.wrap = false
+
+vim.opt.cursorline =  true
+
+vim.opt.mouse = "a"
+
+vim.api.nvim_command(':filetype plugin on')
