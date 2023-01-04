@@ -54,16 +54,25 @@ return require('packer').startup{
       use "p00f/clangd_extensions.nvim"
 
       -- cmp completion and other enhence
-      use 'hrsh7th/nvim-cmp'
       use 'hrsh7th/cmp-nvim-lsp'
       use 'hrsh7th/cmp-buffer'
       use 'hrsh7th/cmp-path'
       use 'hrsh7th/cmp-cmdline'
+      use 'hrsh7th/nvim-cmp'
       use 'saadparwaiz1/cmp_luasnip'
       use 'hrsh7th/cmp-nvim-lsp-signature-help'
       use 'hrsh7th/cmp-nvim-lsp-document-symbol'
 
-      -- use 'nvim-telescope/telescope.nvim'
+      -- git enhence
+      use {
+          'tanvirtin/vgit.nvim',
+          requires = {
+              'nvim-lua/plenary.nvim'
+          }
+      }
+
+      -- debug
+      use 'nvim-telescope/telescope.nvim'
 
       -- some snippet
       use 'L3MON4D3/LuaSnip'
@@ -78,9 +87,16 @@ return require('packer').startup{
 
       -- file explorer
       use {
-          "kyazdani42/nvim-tree.lua",
-          requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+          "nvim-neo-tree/neo-tree.nvim",
+          requires = { 
+              "nvim-lua/plenary.nvim",
+              "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+              "MunifTanjim/nui.nvim",
+          }
       }
+
+      -- terminal
+      use {"akinsho/toggleterm.nvim", tag = '*'}
 
       -- symbols outline
       use "simrat39/symbols-outline.nvim"
