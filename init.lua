@@ -16,9 +16,11 @@ require "user.bufferline"
 require "user.fzf"
 require "user.vgit"
 require "user.toggleterm"
+require "user.neovide"
 
 require "myself.options"
 require "myself.buildsystem"
 require "myself.filetype"
+require "myself.format"
 
 vim.cmd [[colorscheme gruvbox]]
