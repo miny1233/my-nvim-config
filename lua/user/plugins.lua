@@ -124,6 +124,19 @@ return require('packer').startup{
       -- git diffview
       use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
 
+      -- which key hint
+      use {
+          "folke/which-key.nvim",
+          config = function()
+              vim.o.timeoutlen = 300
+              require("which-key").setup {
+                  -- your configuration comes here
+                  -- or leave it empty to use the default settings
+                  -- refer to the configuration section below
+              }
+          end
+      }
+
       -- eazy resize window
       use { "anuvyklack/windows.nvim",
       requires = {
