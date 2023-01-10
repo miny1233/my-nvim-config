@@ -71,8 +71,11 @@ return require('packer').startup{
           }
       }
 
-      -- debug
-      use 'nvim-telescope/telescope.nvim'
+      -- quick find
+      use {
+          'nvim-telescope/telescope.nvim', tag = '0.1.0',
+          requires = { {'nvim-lua/plenary.nvim'} }
+      }
 
       -- some snippet
       use 'L3MON4D3/LuaSnip'
@@ -102,7 +105,6 @@ return require('packer').startup{
       use "simrat39/symbols-outline.nvim"
 
       -- using packer.nvim
-      -- -- using packer.nvim
       use {
           'akinsho/bufferline.nvim',
           tag = "v2.*",
@@ -115,12 +117,24 @@ return require('packer').startup{
           requires = { 'kyazdani42/nvim-web-devicons', opt = true }
       }
 
-      use "junegunn/fzf"
-      use "junegunn/fzf.vim"
+      -- fuzzy find
+      -- use "junegunn/fzf"
+      -- use "junegunn/fzf.vim"
 
-      if PACK_BOOTSTRAP then
-          require("packer").sync()
-      end
+      -- git diffview
+      use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+
+      -- eazy resize window
+      use { "anuvyklack/windows.nvim",
+      requires = {
+          "anuvyklack/middleclass",
+          "anuvyklack/animation.nvim"
+      },
+  }
+
+  if PACK_BOOTSTRAP then
+      require("packer").sync()
+  end
   end,
   config = {
       display = {
