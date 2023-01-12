@@ -29,4 +29,7 @@ vim.opt.cursorline =  true
 vim.opt.mouse = "a"
 vim.opt.hidden = true
 
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+
 vim.api.nvim_command(':filetype plugin on')
