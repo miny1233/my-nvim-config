@@ -143,6 +143,8 @@ return require('packer').startup{
           "anuvyklack/middleclass",
           "anuvyklack/animation.nvim"
       },
+
+      use "folke/trouble.nvim",
   }
 
   if PACK_BOOTSTRAP then

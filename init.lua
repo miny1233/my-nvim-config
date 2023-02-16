@@ -18,6 +18,7 @@ require "user.vgit"
 require "user.toggleterm"
 require "user.neovide"
 require "user.windows"
+require "user.trouble"
 
 require "myself.options"
 require "myself.buildsystem"
