@@ -98,9 +98,25 @@ require("lazy").setup({
           dependencies = { 'kyazdani42/nvim-web-devicons', opt = true }
       },
 
+      -- cmake tool
+      { 'Civitasv/cmake-tools.nvim',
+        dependencies = {
+          "nvim-lua/plenary.nvim",
+          'stevearc/overseer.nvim',
+          "akinsho/toggleterm.nvim",
+        }
+      },
+
+      -- background task visualizer
+      { 'stevearc/overseer.nvim' },
+
       -- fuzzy find
       -- use "junegunn/fzf"
       -- use "junegunn/fzf.vim"
+
+      -- make UI more beautiful
+      { 'stevearc/dressing.nvim' },
+      { 'rcarriga/nvim-notify' },
 
       -- git diffview
       { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },

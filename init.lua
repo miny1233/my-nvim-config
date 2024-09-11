@@ -1,3 +1,5 @@
+vim.opt.termguicolors = true
+
 require "config.lazy"
 require "config.plugins.keymaps"
 require "config.plugins.lspconfig"  -- use mason.nvim to config it
@@ -15,6 +17,10 @@ require "config.plugins.bufferline"
 require "config.plugins.vgit"
 require "config.plugins.toggleterm"
 require "config.plugins.neovide"
+require "config.plugins.overseer"
+require "config.plugins.cmake-tools"
+require "config.plugins.dressing"
+require "config.plugins.nvim-notify"
 
 require "config.myself.options"
 require "config.myself.buildsystem"
