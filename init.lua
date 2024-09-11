@@ -6,7 +6,7 @@ require "config.plugins.lspconfig"  -- use mason.nvim to config it
 require "config.plugins.mason"
 require "config.plugins.cmp"
 require "config.plugins.telescope"
--- require "config.plugins.treesitter" -- update config, forbid repeat download
+require "config.plugins.treesitter"
 require "config.plugins.autopairs"
 -- require "config.plugins.gitsigns" -- update config
 require "config.plugins.neo-tree"

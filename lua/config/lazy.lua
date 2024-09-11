@@ -59,7 +59,15 @@ require("lazy").setup({
     },
 
     -- some snippet
-    { 'L3MON4D3/LuaSnip', version = "2.3.0"},
+
+    -- don't know why, LuaSnip always build failed
+    {
+      "L3MON4D3/LuaSnip",
+      -- follow latest release.
+      version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+      -- install jsregexp (optional!).
+      -- build = "make install_jsregexp"
+    },
     { 'rafamadriz/friendly-snippets'},
 
     -- highlight and symbols
