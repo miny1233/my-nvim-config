@@ -45,16 +45,14 @@ require("lazy").setup({
     { 'hrsh7th/cmp-nvim-lsp-signature-help' },
     { 'hrsh7th/cmp-nvim-lsp-document-symbol'},
     { 'saadparwaiz1/cmp_luasnip'            },
+    { 'folke/trouble.nvim', version = "3.6.0" },
 
     -- git enhence
-    {
-        'tanvirtin/vgit.nvim', version = "0.2.3",
-        dependencies = { 'nvim-lua/plenary.nvim' }
-    },
+    { "lewis6991/gitsigns.nvim", versino = "0.9.0"},
 
     -- quick find
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
         dependencies = { {'nvim-lua/plenary.nvim'} }
     },
 
@@ -73,9 +71,6 @@ require("lazy").setup({
     -- highlight and symbols
     { 'nvim-treesitter/nvim-treesitter', tag = "v0.9.2"},
     { 'windwp/nvim-autopairs'},
-
-      -- git intergation
-    { "lewis6991/gitsigns.nvim", versino = "0.9.0"},
 
       -- file explorer
       {
