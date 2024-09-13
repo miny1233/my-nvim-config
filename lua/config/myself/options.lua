@@ -31,5 +31,6 @@ vim.opt.hidden = true
 
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = false
 
-vim.api.nvim_command(':filetype plugin on')
+vim.cmd.filetype({"plugin", "on"})

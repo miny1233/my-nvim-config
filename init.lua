@@ -28,4 +28,4 @@ require "config.plugins.dap"
 require "config.myself.options"
 require "config.myself.filetype"
 
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd.colorscheme('gruvbox')
