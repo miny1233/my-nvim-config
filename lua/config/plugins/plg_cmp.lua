@@ -11,7 +11,7 @@ end
 local status_ok, luasnip = pcall(require, "luasnip")
 
 if not status_ok then
-    vim.notify("LuaSnip is not exists")
+    vim.notify("LuaSnip is not exists", "warn")
     return
 end
 

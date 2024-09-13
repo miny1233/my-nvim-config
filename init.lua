@@ -7,9 +7,8 @@ require "config.plugins.keymaps"
 require "config.plugins.nvim-notify"    -- make notify import firstly to show pretty notifies
 require "config.plugins.dressing"
 require "config.plugins.lsp_zero"
-require "config.plugins.mason"
-require "config.plugins.lspconfig"
-require "config.plugins.cmp"
+require "config.plugins.mason"  -- config mason and lspconfig
+require "config.plugins.plg_cmp"    -- don't change plg_cmp to cmp, will cause cmp plugin internal error(maybe name duplicate)
 require "config.plugins.telescope"
 require "config.plugins.treesitter"
 require "config.plugins.autopairs"

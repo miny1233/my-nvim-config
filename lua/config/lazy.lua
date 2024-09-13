@@ -62,6 +62,12 @@ require("lazy").setup({
     },
 
     -- snippet
+    --[[
+      LuaSnip now has some internal bug,
+      see
+      https://github.com/nvim-lua/kickstart.nvim/issues/537#issuecomment-1847102575
+      to deal it
+    --]]
     {
       "L3MON4D3/LuaSnip",
       -- follow latest release.
