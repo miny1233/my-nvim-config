@@ -1,6 +1,7 @@
 local status_ok, outline = pcall(require, 'outline')
 
 if not status_ok then
+    vim.notify("outline plugin not exists", "warn")
     return
 end
 

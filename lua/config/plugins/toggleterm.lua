@@ -1,7 +1,7 @@
 local status_ok, toggleterm = pcall(require, 'toggleterm')
 
 if not status_ok then
-    vim.notify("toggleterm plugin is not exists")
+    vim.notify("toggleterm plugin is not exists", "warn")
     return
 end
 

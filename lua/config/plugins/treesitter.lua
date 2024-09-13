@@ -1,7 +1,7 @@
 local status_ok, treesitter= pcall(require, 'nvim-treesitter.configs')
 
 if not status_ok then
-    vim.notify("treesitter plugin is not exists")
+    vim.notify("treesitter plugin is not exists", "warn")
     return
 end
 
@@ -11,9 +11,9 @@ treesitter.setup {
   ensure_installed = { "c", "cpp", "cmake", "lua", "rust", "glsl", "c_sharp" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
-  sync_install = false,
+  sync_install = true,
 
-  auto_install = true;
+  auto_install = false,
 
   -- List of parsers to ignore installing (for "all")
   ignore_install = {},

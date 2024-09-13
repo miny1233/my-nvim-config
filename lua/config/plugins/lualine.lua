@@ -1,7 +1,7 @@
 local status_ok, lualine = pcall(require, "lualine")
 
 if not status_ok then
-    vim.notify("lualine don't exists")
+    vim.notify("lualine don't exists", "warn")
     return
 end
 

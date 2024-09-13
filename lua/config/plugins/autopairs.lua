@@ -1,8 +1,7 @@
-local Rule = require('nvim-autopairs.rule')
 local status_ok, npairs = pcall(require, 'nvim-autopairs')
 
 if not status_ok then
-    vim.notify("auto-paris don't exists")
+    vim.notify("auto-paris don't exists", "warn")
     return
 end
 

@@ -2,7 +2,7 @@
 local status_ok, lsp_zero = pcall(require, 'lsp-zero')
 
 if not status_ok then
-    vim.notify("lsp-zero don't exists")
+    vim.notify("lsp-zero don't exists", "warn")
     return
 end
 
@@ -32,10 +32,7 @@ lsp_zero.extend_lspconfig({
   lsp_attach = lsp_attach,
   capabilities = require('cmp_nvim_lsp').default_capabilities(),
 })
---]]
----
--- LSP configuration
----
+  --]]
 local lsp_zero = require('lsp-zero')
 
 local lsp_attach = function(client, bufnr)
@@ -56,5 +53,5 @@ end
 lsp_zero.extend_lspconfig({
   sign_text = true,
   lsp_attach = lsp_attach,
-  capabilities = require('cmp_nvim_lsp').default_capabilities(),
+  capabilities = require('cmp_nvim_lsp').default_capabilities()
 })

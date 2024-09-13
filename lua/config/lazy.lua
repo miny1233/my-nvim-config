@@ -31,13 +31,18 @@ require("lazy").setup({
     -- clangd extension
     -- { "p00f/clangd_extensions.nvim" },
 
+    -- debugger relate
+    { 'rcarriga/nvim-dap-ui', version = "4.0.0",
+        dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} 
+    },
+
     -- lsp, completion and other enhence
     { 'VonHeikemen/lsp-zero.nvim', branch = 'v4.x' },
     { "williamboman/mason.nvim", version = "1.10.0" },
     { "williamboman/mason-lspconfig.nvim", version = "1.10.0" },
     { 'neovim/nvim-lspconfig' },
-    { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-nvim-lsp'                },
+    { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-buffer'                  },
     { 'hrsh7th/cmp-path'                    },
     { 'hrsh7th/cmp-cmdline'                 },
@@ -56,9 +61,7 @@ require("lazy").setup({
         dependencies = { {'nvim-lua/plenary.nvim'} }
     },
 
-    -- some snippet
-
-    -- don't know why, LuaSnip always build failed
+    -- snippet
     {
       "L3MON4D3/LuaSnip",
       -- follow latest release.
@@ -72,56 +75,56 @@ require("lazy").setup({
     { 'nvim-treesitter/nvim-treesitter', tag = "v0.9.2"},
     { 'windwp/nvim-autopairs'},
 
-      -- file explorer
-      {
-          "nvim-neo-tree/neo-tree.nvim", version = "3.26",
-          dependencies = { 
-              "nvim-lua/plenary.nvim",
-              "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-              "MunifTanjim/nui.nvim",
-          }
-      },
+    -- file explorer
+    {
+    "nvim-neo-tree/neo-tree.nvim", version = "3.26",
+    dependencies = { 
+        "nvim-lua/plenary.nvim",
+        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+        "MunifTanjim/nui.nvim",
+    }
+    },
 
-      -- terminal
-      { "akinsho/toggleterm.nvim" },
+    -- terminal
+    { "akinsho/toggleterm.nvim" },
 
-      -- symbols outline
-      {
-        "hedyhli/outline.nvim", version = "1.0.0",
-      },
+    -- symbols outline
+    {
+    "hedyhli/outline.nvim", version = "1.0.0",
+    },
 
-      {
-          'akinsho/bufferline.nvim', version = "4.7.0",
-          dependencies = {'kyazdani42/nvim-web-devicons'}
-      },
+    {
+    'akinsho/bufferline.nvim', version = "4.7.0",
+    dependencies = {'kyazdani42/nvim-web-devicons'}
+    },
 
-      -- beautiful statesline
-      {
-          "nvim-lualine/lualine.nvim",
-          dependencies = { 'kyazdani42/nvim-web-devicons', opt = true }
-      },
+    -- beautiful statesline
+    {
+    "nvim-lualine/lualine.nvim",
+    dependencies = { 'kyazdani42/nvim-web-devicons', opt = true }
+    },
 
-      -- cmake tool
-      { 'Civitasv/cmake-tools.nvim',
-        dependencies = {
-          "nvim-lua/plenary.nvim",
-          'stevearc/overseer.nvim',
-          "akinsho/toggleterm.nvim",
-        }
-      },
+    -- cmake tool
+    { 'Civitasv/cmake-tools.nvim',
+    dependencies = {
+    "nvim-lua/plenary.nvim",
+    'stevearc/overseer.nvim',
+    "akinsho/toggleterm.nvim",
+    }
+    },
 
-      -- background task visualizer
-      { 'stevearc/overseer.nvim' },
+    -- background task visualizer
+    { 'stevearc/overseer.nvim' },
 
-      -- fuzzy find
-      -- use "junegunn/fzf"
-      -- use "junegunn/fzf.vim"
+    -- fuzzy find
+    -- use "junegunn/fzf"
+    -- use "junegunn/fzf.vim"
 
-      -- make UI more beautiful
-      { 'stevearc/dressing.nvim' },
-      { 'rcarriga/nvim-notify' },
+    -- make UI more beautiful
+    { 'stevearc/dressing.nvim' },
+    { 'rcarriga/nvim-notify' },
 
-      -- git diffview
-      { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
+    -- git diffview
+    { 'sindrets/diffview.nvim', dependencies = 'nvim-lua/plenary.nvim' },
   },
 })

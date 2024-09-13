@@ -1,7 +1,7 @@
 local status_ok, telescope = pcall(require, 'telescope')
 
 if not status_ok then
-    vim.notify("telescope plugin is not exists")
+    vim.notify("telescope plugin is not exists", "warn")
     return
 end
 

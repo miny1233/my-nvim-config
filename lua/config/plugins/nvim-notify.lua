@@ -1,13 +1,13 @@
 local status_ok, notify = pcall(require, 'notify')
 
 if not status_ok then
-    vim.notify("notify plugin not exists");
+    vim.notify("notify plugin not exists", "warn");
     return
 end
 
 
 notify.setup {
-    stages = 'fade_in_slide_out',
+    stages = 'slide',
     background_colour = 'FloatShadow',
     timeout = 3000,
 }

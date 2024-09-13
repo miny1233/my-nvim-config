@@ -1,7 +1,7 @@
 local status_ok, bufferline = pcall(require, "bufferline")
 
 if not status_ok then
-    vim.notify("bufferline don't exists")
+    vim.notify("bufferline don't exists", "warn")
     return
 end
 

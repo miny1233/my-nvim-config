@@ -1,4 +1,12 @@
-require("dressing").setup({
+local status_ok, dressing = pcall(require, 'dressing')
+
+if not status_ok then
+    vim.notify("dressing is not exists", "warn")
+    return
+end
+
+
+dressing.setup({
   input = {
     -- Set to false to disable the vim.ui.input implementation
     enabled = true,

@@ -1,7 +1,7 @@
 local status_ok, gitsigns = pcall(require, 'gitsigns')
 
 if not status_ok then
-    vim.notify("gitsigns don't exists")
+    vim.notify("gitsigns don't exists", "warn")
     return
 end
 

@@ -4,7 +4,7 @@ vim.cmd [[set completeopt=menu,menuone,noselect]]
 local status_ok, cmp = pcall(require, 'cmp')
 
 if not status_ok then
-    vim.notify("nvim-cmp is not exists")
+    vim.notify("nvim-cmp is not exists", "warn")
     return
 end
 
@@ -127,15 +127,6 @@ cmp.setup({
             cmp.config.compare.order,
         },
     },
-})
-
--- Set configuration for specific filetype.
-cmp.setup.filetype('gitcommit', {
-    sources = cmp.config.sources({
-        { name = 'cmp_git' }, -- You can specify the `cmp_git` source if you were installed it.
-    }, {
-        { name = 'buffer' },
-    })
 })
 
 -- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
