@@ -42,8 +42,8 @@ local on_attach = function(_, bufnr)
 
   buf_set_option('omnifunc', 'v:lua.vim.lsp.omnifunc')
 
--- Mappings.
-local opts = { buffer = bufnr, noremap = true, silent = true }
+  -- Mappings.
+  local opts = { buffer = bufnr, noremap = true, silent = true }
   -- See `:help vim.diagnostic.*` for documentation on any of the below functions
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)

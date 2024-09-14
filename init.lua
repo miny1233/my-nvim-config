@@ -1,7 +1,4 @@
 -- vim lua guide: https://neovim.io/doc/user/lua-guide.html
-
-vim.opt.termguicolors = true
-
 require "config.lazy"
 require "config.plugins.keymaps"
 require "config.plugins.nvim-notify"    -- make notify import firstly to show pretty notifies

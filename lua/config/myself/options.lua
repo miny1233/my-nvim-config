@@ -34,3 +34,5 @@ vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
 vim.opt.foldenable = false
 
 vim.cmd.filetype({"plugin", "on"})
+
+vim.lsp.inlay_hint.enable(true, nil) 
