@@ -20,6 +20,7 @@ require "config.plugins.overseer"
 require "config.plugins.cmake-tools"
 require "config.plugins.trouble"
 require "config.plugins.dap"
+require "config.plugins.conform"
 
 require "config.myself.options"
 require "config.myself.filetype"

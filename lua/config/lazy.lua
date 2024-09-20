@@ -122,9 +122,8 @@ require("lazy").setup({
     -- background task visualizer
     { 'stevearc/overseer.nvim' },
 
-    -- fuzzy find
-    -- use "junegunn/fzf"
-    -- use "junegunn/fzf.vim"
+    -- formatter
+    { 'stevearc/conform.nvim' },
 
     -- make UI more beautiful
     { 'stevearc/dressing.nvim' },
