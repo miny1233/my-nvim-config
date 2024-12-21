@@ -25,8 +25,9 @@ vim.opt.termguicolors = true
 vim.opt.wrap = false
 
 vim.opt.cursorline =  true
+vim.opt.guicursor = "n-v-c-i:block,r-cr:hor20,o:hor50"
 
-vim.opt.mouse = "a"
+vim.opt.mouse = "r"
 vim.opt.hidden = true
 
 vim.opt.foldmethod = "expr"
